@@ -1,3 +1,4 @@
+// Designed by Frode Solstrand
 import java.util.ArrayList;
 
 public class BJHand {

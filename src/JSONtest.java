@@ -1,3 +1,4 @@
+// Designed by Frode Solstrand
 public class JSONtest {
 
     public static void winner(BJHand Spiller, BJHand Magnus){
@@ -27,10 +28,10 @@ public class JSONtest {
             Magnus.BJHand.add(BB.Deck.get(c++));
         }
 
-        // Finner ut hvem som er vinneren
+        // Finner ut hvem som er vinneren og skriver det ut
         winner(Spiller, Magnus);
 
-        // Skriv ut resultat
+        // Skriv ut hendene
         System.out.print("Magnus | " + Magnus.getBJValue(Magnus) + " | "); Magnus.listHand(Magnus);
         System.out.print("Frode | " + Spiller.getBJValue(Spiller) + " | "); Spiller.listHand(Spiller);
 
@@ -43,9 +44,9 @@ public class JSONtest {
             gameDeck = gameDeck.populateDeck();
             BJHand Magnus = new BJHand();
             BJHand Spiller = new BJHand();
+            Integer gamestartDeck = 0;
 
             // Kjør spillet fire ganger
-            Integer gamestartDeck = 0;
             gamestartDeck = game(gameDeck,Spiller,Magnus,gamestartDeck );
 
             Magnus = new BJHand();
