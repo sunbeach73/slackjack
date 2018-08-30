@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Frode">
+    <CLASSES>
+      <root url="file://C:/Frode" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Frode/Java" />
+      <root url="file://C:/Frode" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Frode" recursive="false" />
+    <jarDirectory url="file://C:/Frode" recursive="false" type="SOURCES" />
+  </library>
+</component>
