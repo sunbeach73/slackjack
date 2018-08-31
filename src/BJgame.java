@@ -1,4 +1,6 @@
 // Designed by Frode Solstrand
+
+
 public class BJgame {
 
     public static void winner(BJHand Spiller, BJHand Magnus){
