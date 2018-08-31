@@ -1,4 +1,4 @@
-// Designed by Frode Solstrand
+// Holds the entire card eck
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -27,7 +27,7 @@ public class BJDeck {
 
             BJCard cardfromFile;
 
-            // populer kortstokken
+            // populate card deck
             for (int i = 0; i < ((JSONArray) obj).size(); i++) {
                 jo = (JSONObject)((JSONArray) obj).get(i);
                 cardfromFile = new BJCard();

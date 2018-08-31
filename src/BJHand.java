@@ -5,6 +5,7 @@ public class BJHand {
 
     ArrayList<BJCard> BJHand = new ArrayList<BJCard>();
 
+    // Returns value of a complete hand
     public int getBJValue(BJHand hand) {
 
         Integer HandValue = 0;
@@ -23,6 +24,7 @@ public class BJHand {
         return HandValue;
     }
 
+    // Prints the whole hand
     public void listHand(BJHand hand) {
         for (int i = 0; i < hand.BJHand.size(); i++) {
             System.out.print(hand.BJHand.get(i).BJSuit.charAt(0));
@@ -34,12 +36,10 @@ public class BJHand {
         System.out.println();
     }
 
+    // Deals two cards to a players hand
     public BJHand dealCards (BJHand hand, BJDeck deck, Integer indx){
         hand.BJHand.add(deck.Deck.get(indx++));
         hand.BJHand.add(deck.Deck.get(indx));
         return hand;
     }
-
-
-//return BJHand;
 }
