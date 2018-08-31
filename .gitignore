@@ -2,4 +2,6 @@
 !.gitignore
 
 /*.iml
+/*.idea
+/.netrc
 ~*
